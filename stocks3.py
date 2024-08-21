@@ -76,7 +76,7 @@ def makeSellTrade(currentStockValue, day, date):
 
 # Load data from CSV file
 data = []
-with open("MNHD.csv", mode='r') as file:
+with open("./csv/MNHD.csv", mode='r') as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
         data.append({"Date": row["Date"], "Price": float(row["Price"])})
